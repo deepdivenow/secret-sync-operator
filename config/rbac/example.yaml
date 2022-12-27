@@ -1,0 +1,7 @@
+apiVersion: auth.itsumma.ru/v1alpha1
+kind: ServiceAccount
+metadata:
+  name: first
+  namespace: secret-sync-operator-system
+spec:
+  user_name: second

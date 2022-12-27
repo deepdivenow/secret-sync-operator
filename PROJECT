@@ -1,0 +1,19 @@
+domain: itsumma.ru
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: secret-sync-operator
+repo: github.com/deepdivenow/secret-sync-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: itsumma.ru
+  group: auth
+  kind: ServiceAccount
+  path: github.com/deepdivenow/secret-sync-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"
